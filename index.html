@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/solid.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/regular.css">
+
+
+    <title>1000 SouaL - Quiz</title>
+</head>
+<body>
+    <div class="App">
+
+        <header>
+
+            <div class="logo"><h3>ألف سؤال</h3></div>
+
+            <div class="head">
+                <div class="Qnum-aria"><p id="Qnum"></p></div>
+                <div id="heartsAria" class="hearts">
+                    <div id="time-count-aria" class="time-count-aria">
+                        <h5 id="time-count">:الوقت المتبقي</h5>
+                    </div>
+                    <div id="heart" class="heart"></div>
+                </div>
+
+                <div class="themeIcon-aria">
+                    <i  id="themeIcon" class="fa-solid fa-moon"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+        <main>
+            <div class="screen">
+                <div class="Qimg-back">
+                    <img id="QuestCover" alt="cover">
+                </div>
+                <div class="quest-text-area">
+                    <h5 id="quest"></h5>
+                </div>
+            </div>
+
+            <div class="results">
+                <div class="result" id="result">
+                    <i id="svg-img" class="fa-regular fa-circle-check"></i>
+                    <h4 id="result-text">true of false</h4>
+                </div>
+                <div class="message" id="message">
+                    <h4 id="message-text"></h4>
+                </div>
+            </div>
+
+            <div class="answer-screen">
+                <ul id="answers">
+                </ul>
+            </div>
+
+        </main>
+        <footer>
+            <div class="buttons-area">
+                <div class="buttons">
+                    <button id="check-btn" type='submit'>CHECK</button>
+                    <button type="submit" id="next-btn">NEXT</button>
+                    <button type="text" id="again-btn">Try AGAIN</button>
+                </div>
+                <div class="back-button-text">
+                    <p type="submit" id="back-btn">BACK</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="main.js"></script>
+    <script src="service-worker.js"></script>
+</body>
+</html>
